@@ -1,4 +1,5 @@
 module.exports = {
+  description: 'Installs the bower dependency.',
   normalizeEntityName: function() {
 
   },
@@ -12,6 +13,6 @@ module.exports = {
 
 
   afterInstall: function(options) {
-    this.addBowerPackageToProject('fontface-source-sans-pro', '*');
+    return this.addBowerPackageToProject('fontface-source-sans-pro');
   }
 };
